@@ -1,0 +1,102 @@
+{
+    "sidenavMenuItems": 
+    [
+        {
+            "menuName":"dashboard",
+            "submenu":
+            [
+                {
+                    "name":"dashboard 1",
+                    "link":"#!/Dashboard1"
+                },
+                {
+                    "name":"dashboard 2",
+                    "link":"#!/Dashboard2"
+                },
+                {
+                    "name":"dashboard 3",
+                    "link":"#!/Dashboard3"
+                }
+            ],
+            "icon":"fa fa-tachometer",
+            "badge":
+            {
+                "message":"hot",
+                "style":
+                {
+                    "background-color":"red"
+                }
+            }
+        },
+        {
+            "menuName":"mail box",
+            "submenu":
+            [
+                {
+                    "name":"gmail",
+                    "link":"#!/Mailbox-gmail"
+                },
+                {
+                    "name":"yahoo",
+                    "link":"#!/Mailbox-yahoo"
+                },
+                {
+                    "name":"outlook",
+                    "link":"#!/Mailbox-outlook"
+                }
+            ],
+            "icon":"fa fa-envelope",
+            "badge":
+            {
+                "message":"new",
+                "style":
+                {
+                    "background-color":"blue"
+                }
+            }
+        },
+        {
+            "menuName":"about us",
+            "icon":"fa fa-industry",
+            "link":"#!/View/Dashboard"
+        },
+        {
+            "menuName":"address book",
+            "submenu":
+            [
+                {
+                    "name":"mobile",
+                    "link":"#!/View/Dashboard"
+                },
+                {
+                    "name":"work",
+                    "link":"#!/View/Dashboard"
+                }
+            ],
+            "icon":"fa fa-book",
+            "badge":
+            {
+                "message":"76",
+                "style":
+                {
+                    "background-color":"green"
+                }
+            }
+        },
+        {
+            "menuName":"chart",
+            "icon":"fa fa-bar-chart",
+            "link":"#!/View/Dashboard"
+        },
+        {
+            "menuName":"shops",
+            "icon":"fa fa-shopping-cart",
+            "link":"#!/View/Dashboard"
+        },
+        {
+            "menuName":"extras",
+            "icon":"fa fa-caret-square-o-down",
+            "link":"#!/View/Dashboard"
+        }
+    ]
+}

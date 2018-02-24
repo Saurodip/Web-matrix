@@ -1,0 +1,242 @@
+@media (min-width: 768px) 
+{
+    .sidebar-nav .navbar
+    {
+        border: 0px;
+        border-radius: 0px;
+        height: calc(100vh - 123px); 
+        margin-top: 123px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        position: fixed;
+        scrollbar-arrow-color: black;
+        scrollbar-base-color: black;
+        scrollbar-track-color: black;
+        width: 299px;
+    }
+
+    .sidebar-nav .navbar::-webkit-scrollbar 
+    {
+        width: 1px;
+    }
+    
+    .sidebar-nav .navbar .navbar-collapse 
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+        max-height: none;
+    }
+
+    .sidebar-nav .navbar-header 
+    {
+        float: none;
+    }
+
+    #userDetail
+    {
+        background-image: url("../Images/user info.jpg");
+        background-size: 100% 100%;
+        border: 1px solid gray;
+        color: white;
+        height: 280px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        width: 280px;
+    }
+    
+    .user-image
+    {
+        background-image: url("../Images/avatar.jpg");
+        background-size: 100% 100%;
+        border: 2px solid white;
+        display: block;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70px;
+    }
+    
+    #userDetail > .row:first-child
+    {
+        margin-top: 20px;
+    }
+    
+    #userDetail p
+    {
+        font-size: 18px;
+    }
+    
+    #userDetail a
+    {
+        color: white;
+        text-decoration: none; 
+    }
+    
+    #userDetail .userDetailIcon
+    {
+        display: inline-block;
+    }
+    
+    .tooltip.bottom .tooltip-arrow 
+    {
+        border-bottom-color: #777;
+    }
+    
+    .tooltip.bottom .tooltip-inner
+    {
+        background-color: #777;
+        font-size: 13px;
+    }
+    
+    #userDetail .fa
+    {
+        background-color: #3c3333;
+        border-radius: 4px;
+        padding: 8px;
+    }
+    
+    #userDetail > .row:nth-child(2)
+    {
+        margin-bottom: 20px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    
+    #userDetail > .row:nth-child(3) .col-sm-4
+    {
+        background-color: #3c3333;
+        padding: 10px 0px;
+    }
+    
+    #userDetail > .row:nth-child(3) span, #userDetail > .row:nth-child(3) small
+    {
+        display: block;
+        text-align: center;
+    }
+    
+    #userDetail > .row:nth-child(3) span
+    {
+        font-size: 19px;
+    }
+    
+    .sidebar-nav .navbar ul 
+    {
+        display: block;
+        float: none;
+        padding: 0px;
+        width: 280px;
+    }
+
+    .sidebar-nav .navbar li 
+    {
+        display: block;
+        float: none;
+    }
+    
+    .hideSidenav
+    {
+        left: -300px;
+        -moz-transition: all 700ms linear;
+        -webkit-transition: all 700ms linear;
+        -o-transition: all 700ms linear;
+        transition: all 700ms linear;        
+    }
+    
+    .showSidenav
+    {
+        left: 0px;
+        -moz-transition: all 700ms linear;
+        -webkit-transition: all 700ms linear;
+        -o-transition: all 700ms linear;
+        transition: all 700ms linear;
+    }
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover
+{
+    background-color: #545151;
+}
+
+.sidebar-nav .navbar
+{
+    margin-bottom: 0px;
+}
+
+.navbar-inverse
+{
+    background-color: black;
+}
+
+.sidebar-nav .navbar-header .navbar-brand
+{
+    color: white;
+    margin-top: 8px;
+}
+
+.navbar-inverse .navbar-toggle
+{
+    border-radius: 50%;
+    border-width: 2px; 
+    padding: 13px 10px;
+}
+
+.sidebar-nav .navbar li 
+{
+    font-size: 12px;
+    list-style-type: none;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.sidebar-nav .navbar li:hover
+{
+    background-color: #636060;
+}
+
+.sidebar-nav .navbar li a 
+{
+    color: white;
+    cursor: pointer;
+    display: block;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-top: 12px;
+}
+
+.sidebar-nav .navbar .fa
+{
+    padding-right: 10px;
+}
+
+.sidebar-nav .navbar .badge
+{
+    border-radius: 0px;
+    color: white;
+    float: right;
+    padding: 4px 7px;
+}
+
+.sidebar-nav .navbar .submenu
+{
+    background-color: #312f2f;
+}
+
+.slideUp 
+{
+    display: block;
+    max-height: 300px;
+    overflow: hidden;
+    -moz-transition: max-height 0.5s ease-in-out;
+    -o-transition: max-height 0.5s ease-in-out;
+    -webkit-transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.slideUp.ng-hide 
+{
+    max-height: 0px;
+}

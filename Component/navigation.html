@@ -1,0 +1,61 @@
+<div class="navbar navbar-default navbar-inverse" role="navigation" ng-class="showSidenav ? 'hideSidenav' : 'showSidenav'"> 
+    <div class="navbar-header"> 
+        <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="#"> 
+            <span class="text-uppercase">{{ AppTitle }}</span> 
+        </a> 
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse"> 
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+        </button> 
+    </div> 
+
+    <div class="navbar-collapse collapse sidebar-navbar-collapse"> 
+        <div id="userDetail" class="container-fluid hidden-xs">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="img-circle user-image"></div> 
+                </div>
+                <div class="col-sm-7 text-capitalize">
+                    <small>welcome</small>
+                    <p><strong>hello user</strong></p>
+                    <div class="userDetailIcon"><a href="#" title="Inbox" data-toggle="tooltip" data-placement="bottom" tooltip><i class="fa fa-envelope-o" aria-hidden="true"></i></a></div>
+                    <div class="userDetailIcon"><a href="#" title="Profile" data-toggle="tooltip" data-placement="bottom" tooltip><i class="fa fa-user-o" aria-hidden="true" tooltip></i></a></div>
+                    <div class="userDetailIcon"><a href="#" title="Fullscreen" data-toggle="tooltip" data-placement="bottom" tooltip><i class="fa fa-arrows-alt" aria-hidden="true" tooltip></i></a></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <small class="text-capitalize">today report</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-4" ng-repeat="data in userInfoAdditionalData.topic">
+                        <span class="text-capitalize"><strong>{{ data.value | number }}</strong></span>
+                        <small class="text-capitalize">{{ data.name }}</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <ul class="nav navbar-nav text-uppercase"> 
+            <li ng-repeat="menu in sidenavMenuItems" ng-click="setActiveTabClass(menu.menuName);" ng-class="{ active: isActive(menu.menuName) }">
+                <a ng-href="{{ menu.link }}" ng-click="showSubmenu = !showSubmenu; getMenuItemInstance(menu.menuName);">
+                    <i class="{{ menu.icon }}" aria-hidden="true"></i>{{ menu.menuName }}
+                    <span class="badge" ng-style="menu.badge.style" ng-if="menu.badge.message !== undefined">
+                        {{ menu.badge.message }}
+                    </span>
+                </a>
+                <ul class="submenu slideUp" ng-show="showSubmenu">
+                    <li ng-repeat="submenu in menu.submenu">
+                        <a ng-href="{{ submenu.link }}" ng-click="getMenuItemInstance(menu.menuName); getSubmenuItemInstance(submenu.name);">
+                            <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+                            {{ submenu.name }}
+                        </a>
+                    </li>
+                </ul>
+            </li> 
+        </ul> 
+    </div>
+</div>

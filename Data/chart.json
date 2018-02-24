@@ -1,0 +1,75 @@
+{
+	"chartOrders": 
+	{
+		"labels": ["2006", "2007", "2008", "2009", "2010", "2011", "2012"],
+		"series": ["Series A", "Series B"],
+		"colors": 
+		[{
+			"backgroundColor": "green",
+			"borderColor": "green",
+			"hoverBackgroundColor": "green",
+			"hoverBorderColor": "green"
+		}, {
+			"backgroundColor": "white",
+			"borderColor": "white",
+			"hoverBackgroundColor": "white",
+			"hoverBorderColor": "white"
+		}],
+		"data": [
+			[25, 39, 50, 81, 56, 35, 10],
+			[40, 50, 70, 40, 50, 38, 20]
+		],
+                "options": 
+                {
+                    "legend": false,
+                    "tooltips": false,
+                    "xAxis": false,
+                    "yAxis": false
+		}
+	},
+	"chartBalance": 
+	{
+		"labels": ["2001", "2002", "2003", "2004", "2005", "2006", "2007"],
+		"series": ["Series A", "Series B"],
+		"colors": 
+		[{
+			"backgroundColor": "blue",
+			"borderColor": "blue",
+			"hoverBackgroundColor": "blue",
+			"hoverBorderColor": "blue"
+		}, {
+			"backgroundColor": "white",
+			"borderColor": "white",
+			"hoverBackgroundColor": "white",
+			"hoverBorderColor": "white"
+		}],
+		"data": [
+			[35, 59, 80, 61, 56, 55, 40],
+			[48, 68, 60, 89, 36, 47, 60]
+		],
+                "options": 
+                {
+                    "legend": false,
+                    "tooltips": false,
+                    "xAxis": false,
+                    "yAxis": false
+		}
+	},
+        "chartStatistics": 
+	{
+		"labels": ["2001", "2002", "2003", "2004", "2007", "2010", "2012", "2016"],
+		"series": ["Series A", "Series B", "Series C"],
+		"data": [
+			[30, 60, 40, 60, 50, 60, 70, 50],
+			[58, 78, 60, 49, 65, 50, 63, 76],
+                        [66, 98, 57, 87, 44, 70, 58, 90]
+		],
+                "options": 
+                {
+                    "legend": true,
+                    "tooltips": true,
+                    "xAxis": true,
+                    "yAxis": true
+		}
+	}
+}

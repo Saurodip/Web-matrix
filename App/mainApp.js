@@ -1,0 +1,1 @@
+angular.module("Application", ["chart.js", "ngRoute"]);

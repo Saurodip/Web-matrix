@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Angular</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="Images/favicon.png" type="image/gif" sizes="16x16">
+
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->  
+        <link rel="stylesheet" href="Library/Font awesome 4.7.0/library/css/font-awesome.min.css">
+        
+        <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="Library/Bootstrap 3.3.5/CSS/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="CSS/fontface.css">
+        <link rel="stylesheet" type="text/css" href="CSS/index.css">
+        <link rel="stylesheet" type="text/css" href="CSS/preloader.css">
+        <link rel="stylesheet" type="text/css" href="CSS/navigation.css">
+        <link rel="stylesheet" type="text/css" href="CSS/topbar.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Dashboard1.css" >
+        
+        <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+        <script type="text/javascript" src="Library/jQuery/jQuery.js"></script>
+
+        <!--<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+        <script type="text/javascript" src="Library/Bootstrap 3.3.5/JS/bootstrap.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+        <script src="https://code.angularjs.org/1.6.2/angular-route.js"></script>
+        <script type="text/javascript" src="Library/Angular-chart/chart.js"></script>
+        <script type="text/javascript" src="Library/Angular-chart/angular-chart.min.js"></script>
+        <!--<script type="text/javascript" src="Library/AngularJS 1.6.2/angular-route.min.js"></script>-->
+
+        <script type="text/javascript" src="JS/preloader.js"></script>
+        <script type="text/javascript" src="App/mainApp.js"></script>
+        <script type="text/javascript" src="Routing/routing.js"></script>
+        <script type="text/javascript" src="Directive/tooltipDirective.js"></script>
+        <script type="text/javascript" src="Service/chartService.js"></script>
+        <script type="text/javascript" src="Service/progressBarService.js"></script>
+        <script type="text/javascript" src="Controller/header.js"></script>
+        <script type="text/javascript" src="Controller/Dashboard1.js"></script>
+        <script type="text/javascript" src="Controller/Profile.js"></script>
+    </head>
+
+    <body ng-app="Application">
+        <div class="wrapper">
+            <div id="preloaderContainer">
+                <img src="Images/preloader.gif" alt="Preloader" id="preloader">
+            </div>
+
+            <header ng-controller="headerController">
+                <nav class="sidebar-nav" ng-include="'Component/navigation.html'">
+                    <!-- NAVIGATION PANEL: LOADED FROM "navigation.js" FILE -->
+                </nav>
+
+                <div class="topbar" ng-include="'Component/topbar.html'">
+                    <!-- TOPBAR: LOADED FROM "topbar.js" FILE -->
+                </div>
+            </header>
+
+            <div class="container-fluid mainContent" ng-class="showSidenav ? 'shiftMainContent' : 'mainContent'">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <main>
+                            <ng-view>
+                                <!-- MAIN PAGE IS LOADED HERE -->
+                            </ng-view>
+                        </main>
+
+                        <footer>
+                            <!-- FOOTER CONTENT: LOAD FORM "footer.js" FILE -->
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

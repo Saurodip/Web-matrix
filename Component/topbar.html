@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 hidden-xs" id="site-logo"> 
+            <a href="#"> 
+                <span class="text-uppercase">{{ AppTitle }}</span>  
+            </a>
+        </div>
+        <div class="col-sm-1 hidden-xs" id="sidenav-icon"> 
+            <button type="button" class="sidenav-toggle-icon" ng-click="changeSidenavState();">
+                <span class="custom-icon-bar"></span>
+                <span class="custom-icon-bar"></span>
+                <span class="custom-icon-bar"></span>                     
+            </button>
+        </div>
+        <div class="col-xs-12 col-sm-3" id="topbar-search"> 
+            <div class="input-group"> 
+                <input type="text" class="form-control" placeholder="Search"> 
+                    <span class="input-group-btn"> 
+                        <button type="button" class="btn btn-default"> 
+                            <i class="fa fa-search" aria-hidden="true"></i> 
+                        </button>
+                    </span> 
+            </div> 
+        </div> 
+        <div class="col-xs-12 col-sm-3"> 
+            <div id="topbar-notifications"> 
+                <i class="fa fa-envelope-o" aria-hidden="true"><span class="badge envelop">{{ notifications.envelop }}</span></i> 
+                <i class="fa fa-bell-o" aria-hidden="true"><span class="badge bell">{{ notifications.bell }}</span></i> 
+                <i class="fa fa-briefcase" aria-hidden="true"><span class="badge briefcase">{{ notifications.briefcase }}</span></i> 
+            </div> 
+        </div> 
+        <div class="col-xs-12 col-sm-3"> 
+            <div id="topbar-user-info"> 
+                <img src="Images/Avatar.jpg" class="img-circle" alt="User image">  
+                <span>Hello User</span> 
+            </div> 
+        </div> 
+    </div> 
+
+    <div class="row"> 
+        <div class="col-xs-12"> 
+            <ol class="breadcrumb text-capitalize"> 
+                <span class="welcome-msg pull-left"><strong>Hey, welcome back</strong>, it's so great to see you again!</span> 
+                <li class="breadcrumb-item"><i class="fa fa-home" aria-hidden="true"></i></li> 
+                <li class="breadcrumb-item">{{ sidebarMenuItemName }}</li>
+                <li class="breadcrumb-item" ng-if="resetSubmenu">{{ sidebarSubMenuItemName }}</li>
+            </ol>  
+        </div> 
+    </div>
+</div>

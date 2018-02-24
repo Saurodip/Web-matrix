@@ -1,0 +1,191 @@
+.topbar
+{
+    background-color: black;
+    padding-top: 20px; 
+    width: 100%;
+}
+
+@media (min-width: 768px) 
+{
+    .topbar
+    {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    #topbar-notifications
+    {
+        float: right;
+        margin-top: 10px;
+    }
+}
+
+.topbar > .container-fluid
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.topbar #site-logo a > span
+{
+    color: white;
+    display: inline-table;
+    text-align: center;
+}
+
+@media (min-width: 768px)
+{
+    .topbar #site-logo a > span
+    {
+        margin-top: 3px;
+    }
+}
+
+@media (min-width: 1062px)
+{
+    .topbar #site-logo a > span
+    {
+        margin-top: 15px;
+    }
+}
+
+.sidenav-toggle-icon
+{
+    background-color: transparent;
+    border: 2px solid #3f3e3e;
+    border-radius: 50%;
+    margin-top: 4px;
+    padding: 7px;
+    transition-delay: 1s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+} 
+
+.sidenav-toggle-icon:hover
+{
+    background-color: #3f3e3e;
+}
+
+.custom-icon-bar
+{
+    background-color: white;
+    display: block;
+    height: 2px;
+    margin: 4px;
+    width: 15px;
+}
+
+.topbar .row:first-child
+{
+    margin-bottom: 20px;
+}
+
+#topbar-search input[type="text"], #topbar-search button
+{
+    background-color: #191818;
+    border-radius: 0px;
+    color: white;
+    margin-top: 8px;
+}
+
+#topbar-notifications .fa
+{
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#topbar-notifications .badge
+{
+    border-radius: 0px;
+    font-family: Monserrat-Regular, Helvetica, Arial;
+    padding-bottom: 3px; 
+    padding-top: 4px;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+}
+
+#topbar-notifications .envelop
+{
+    background-color: green;
+}
+
+#topbar-notifications .bell
+{
+    background-color: red;
+}
+
+#topbar-notifications .briefcase
+{
+    background-color: blue;
+}
+
+#topbar-user-info img
+{
+    border: 2px solid white;
+    height: 50px;
+    margin-right: 10px;
+    width: 50px;
+}
+
+#topbar-user-info span
+{
+    color: white;
+}
+
+.topbar .row:nth-child(2) .col-xs-12
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.topbar .row:nth-child(2) .breadcrumb
+{
+    background-color: #3f3e3e;
+    border-radius: 0px;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 0px;
+    text-align: right;
+}
+
+@media (max-width: 768px) 
+{
+    #topbar-search .input-group
+    {
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        left: 0;
+        right: 0;
+        width: 70%;
+    }
+	
+    #topbar-notifications
+    {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+	
+    #topbar-user-info
+    {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .welcome-msg
+    {
+        margin-bottom: 15px;
+        text-align: center;
+        width: 100%;
+    }
+}
